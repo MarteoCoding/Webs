@@ -1,0 +1,138 @@
+/* Generales */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+/* Menu */
+
+.webheader {
+    background-color: #191970;
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffff;
+    box-shadow: 1px 0 3px #2121ad;
+    position: fixed;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 35px;
+    padding: 0 80px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+}
+
+.menu li {
+    border-radius: 3px;
+    margin: 0 5px;
+}
+
+.menu li a {
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.menu li:hover {
+    background-color: #070731;
+    transition: .4s;
+}
+
+.btn_menu {
+    margin-right: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+ul.show {
+    top: 65px;
+}
+
+@media screen and (max-width: 858px) {
+    .menu {
+        height: 65px;
+    }
+
+    .btn_menu {
+        display: inline-flex;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        background: #070731;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu li:hover {
+        background-color: #191970;
+        transition: .4s;
+    }
+}
+
+/* Contacto */
+
+.contact {
+    background-color: #191970;
+    color: #ffffff;
+    text-align: center;
+}
+
+#email, #mensaje {
+    border: none;
+    resize: none;
+    margin-top: 5px;
+    background-color: #070731;
+    color: #ffffff;
+    box-shadow: 1px 1px 0 1px rgba(255, 255, 255, 0.487);
+}
+
+#email {
+    height:20px;
+}
+
+#mensaje {
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#enviarmsg {
+    border: none;
+    background-color: #070731;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+}
